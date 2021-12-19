@@ -1,0 +1,173 @@
+INTRODUCTION 
++Bitcoin was the firs one to take blockchain mainstream.
++Bitcoin is like a digital gold.
++Etereum allows for smart contracts.
++Chainlink provides data and external computation to smart contracts.
++Hybrid Smart Contracts combine on-chain and off chain components.
+
+
+Features of blockchain
++Decentralized
++Transparency and Flexibility
++Speed and Efficiency
++Security and Immutability
++Removal of Counterparty Risk
++Trust minimized agreements
++Blockchains are resilient.
+
+DAOs [Decentralized autonomous organizations]
++The backbone of a DAO is its smart contract. 
++The contract defines the rules of the organisation and holds the group's treasury. 
++Once the contract is live on Ethereum, no one can change the rules except by a vote. 
+
+META MASK
++Create a Meta Mask Wallet.
++Save your wallet Secret Code safely.
++Testnets are free and for testing smrt contrats.
++Mainnet cost money and are considered "live".
+
+FAUCET
++Is an application that gives us free tokens, 
+like free test Rinkeby Ethereum.
+
+TEST NETWORKS
++Rinkeby - get testing ethereum 
+
+BLOCK EXPLORER
++An application that allows us to "view" ransaction that happen on a blockchain.{ETHERSCAN}
+
+GAS
++Gas ia a unit of computational measure. The more computation a transaction uses 
+the more "gas" you have to pay for.
++Every transaction that happens on-chain pays a "gas fee" to node operators.
++The amount of "gas" used and how much you pay depends on how "computationally
+expensive" your transaction is.
++Sending ETH to 1 address would be "cheaper" than sending ETH to 1,000 address.
+
++Gas: Measure of computation use
++Gas Price: How much it costs per unit of gas.
++Gas Limit: Max amount of gas in a transaction.
++Transaction Fee: Gas Used * Gas Praice
+i.e. 21,000gas*1GWEI per gas = 21,000 GWEI
+
++Gas Price is based off the "demand" of the blockchain.
++The more people wants to make transactions, the higher the gas price, and therefore 
+the higher the transaction fees.{YOU CAN CHECK ON ETH GAS STATION}
+
+
+BLOCKCHAIN WORKING DEMO WEBSITE
+https://andersbrownworth.com/blockchain/hash
+
+HASH
++A unique fixed length string,meant to identify a piece of data. They are created by 
+placing said data.They are created by placing some data into a "hash function".
++Ethereum uses Keccak256 for its hashing algorithm.
+
+HASH ALGORITHM 
++A function that computes data into a unique hash.
+               |
+               |
+               |
+BLOCK
++A list of transactions mined together.
++Block consist of data and nonce which combine and give a hash value.
++Every hash value starts with 0000 (it was a struggle for developers to find a nonce value
+ for for making hash value start with 0000).
+                |
+                |
+                |
+ BLOCHAIN FORMATION 
+ +Many blocks combine and make blockchain.
+ +Genesis Block- The first block in a bloackchain.(which has previous block value as all 0).
+
+ DECENTRALIZED(Peer to peer transaction)
+ +Having no single point of authority.
+
+ MINING
+ +The process of finding the "solution" to the blockchain "problem".
+ +In our example, the "problem" was to find a hash that starts with four zeros.
+ +Nodes get paid for mining blocks.
+
+Basic Termonology--
+
++NODE - A single instance in a decentralized network.
+
++NONCE - A "number used once" to find the "solution" to the blockchain problem. It's also used to define
+ the transaction number for an account address.
+
++Private Key - Only known to the key holder, it's used to "sign" transactions.
+
++Public Key - Is derived from your private key.Anyone can "see" it, and use it to verify that a transaction 
+came from you.
+
++Signing a transaction - A "one way" process. Someone with a private key signs a transaction by their private
+ key being hashed with their transaction data.
+Anyone can then verify this new transaction hash with your public key.
+
+HOW IS ADDRESS CREATED
++To get address in ethereum allows they do is take public key that we created with ur private key hash is using
+ that same 
+algorithm Ethereum hashing algorithm and then take the last 20 bits.
+
++Blockchain nodes keep lists of the transaction that occur.
+
+
+ALL ABOUT IMPLMENTATION
+
+CONSENSUS
++It is the mechanism used to agree on the state of a blockchain. 
++CONSENSUS can also of two types
+      -- Chain Seletion  -- IN Ethereum they uses NAKAMOTO CONSENSUS which is a combinatin of chain selection and proof of work
+      -- Sybil Resistance   +It is one in two ways 
+                                 -Proof of Work 
+                                 -Proof of Stake
+
+
+PROOF OF WORK
++Proof-of-work is the mechanism that allows the decentralized Ethereum network to come to consensus, or agree on things like account balances and the order of transactions.
++Proof-of-work is the underlying algorithm that sets the difficulty and rules for the work miners do. 
++Mining is the "work" itself. It's the act of adding valid blocks to the chain. This is important because the chain's length helps the network follow the correct Ethereum chain and understand Ethereum's current state. The more "work" done, the longer the chain, and the higher the block number, the more certain the network can be of the current state of things
++Disadvantages of PoW
+     -Proof-of-work uses up so much energy that it's bad for the environment.
+     -If you want to mine, you need such specialized equipment that it's a big investment to start.
+
+
+PROOF OF STAKE
++Proof-of-stake is a type of consensus mechanism used by blockchain networks to achieve distributed consensus.
++It requires users to stake their ETH to become a validator in the network. Validators are responsible for the same thing as miners in proof-of-work: ordering transactions and creating new blocks so that all nodes can agree on the state of the network.
++Proof-of-stake comes with a number of improvements to the proof-of-work system:
+   -better energy efficiency – you don't need to use lots of energy mining blocks
+   -lower barriers to entry, reduced hardware requirements – you don't need elite hardware to stand a chance of creating new blocks
+   -stronger immunity to centralization – proof-of-stake should lead to more nodes in the network
+   -stronger support for shard chains – a key upgrade in scaling the Ethereum network
+
++Ways in which nodes or miners are paid
+    -- Transaction Fees 
+    -- Block Reward
+
++Two types of attack that could happen in blockchain world
+  - Sybil Attack is a type of attack seen in peer-to-peer networks in which a node in the network operates multiple identities actively at the same time and undermines the authority/power in reputation systems.
+  - 51% attack allow malicious entities to withhold majority control of a network it occurs when a single person or group of people gains control of over 50% of a blockchain's network.
+
++Layer 1 
+     Base Layer blockchain implementation
++Layer 2
+     Any application built on top of a layer 1.
+     Example 
+       - Chainlink 
+       - Optimistic 
+
+SHARDING AND ROLLUPS ARE SCALABILITY SOLUTIONS
+
++Sharding 
+     Sharding is a database partitioning technique used by blockchain companies with the purpose of scalability, enabling them to process more transactions per second. ... Sharding can help reduce the latency or slowness of a network since it splits a blockchain network into separate shards.
+
+
++Rollups are solutions that perform transaction execution outside the main Ethereum chain (layer 1) but post transaction data on layer 1. As transaction data is on layer 1, rollups are secured by layer 1. Inheriting the security properties of layer 1 while performing execution outside of layer 1 is a defining characteristic of rollups.
+   EXAMPLE-
+      1. Optimistic Ethereum is a rollup scaling solution that allows users to submit transactions on the Ethereum network and get them executed faster for a much lower gas cost.
+      2. Arbitrum
+
+
+
+
