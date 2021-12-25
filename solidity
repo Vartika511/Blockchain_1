@@ -57,9 +57,9 @@
    Storage:
          They will persist even after the function executes.
          (keep it forever)
-   (String is an object so we need to decide were to store it.)      
+(String is an object so we need to decide were to store it.)      
 +Mappings: 
-A dictionary like data structure, with 1 value per key. 
+     A dictionary like data structure, with 1 value per key. 
 
       
 
