@@ -51,23 +51,15 @@
    -Dynamic Array --> An array that can change size.
    -Fixed Array --> An array that can not change size.
 +Data can be stored in two ways
-<<<<<<< HEAD
    Memory:
          Data will only be stored during the execution of the function.
          (delete it after execution)
    Storage:
-=======
-     Memory:
-         Data will only be stored during the execution of the function.
-         (delete it after execution)
-     Storage:
->>>>>>> 25d0b28e4d6591a858d8079534d2fd1b05fa2697
          They will persist even after the function executes.
          (keep it forever)
    (String is an object so we need to decide were to store it.)      
 +Mappings: 
-<<<<<<< HEAD
-          A dictionary like data structure, with 1 value per key. 
-=======
-          A dictionary like data structure, with 1 value per key. 
->>>>>>> 25d0b28e4d6591a858d8079534d2fd1b05fa2697
+A dictionary like data structure, with 1 value per key. 
+
+      
+
