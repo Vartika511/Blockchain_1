@@ -51,10 +51,10 @@
    -Dynamic Array --> An array that can change size.
    -Fixed Array --> An array that can not change size.
 +Data can be stored in two ways
-   Memory:
+     Memory:
          Data will only be stored during the execution of the function.
          (delete it after execution)
-   Storage:
+     Storage:
          They will persist even after the function executes.
          (keep it forever)
    (String is an object so we need to decide were to store it.)      
