@@ -22,24 +22,16 @@ contract SimpleStorage {
         return favoriteNumber;
     }
     
-<<<<<<< HEAD
     /* function retrieve2(uint256 favoriteNumber) public pure returns(uint256){
        return favoriteNumber+favoriteNumber;
     } */
     
     function addPerson(string memory nam, uint y) public{
-       peo.push(People({favoriteNumber:y, name: nam}));
-=======
-    function retrieve2(uint256 favoriteNumber) public pure returns(uint256){
-       return favoriteNumber+favoriteNumber;
-    } 
-    
-    function addPerson(string memory nam, uint y) public{
        // peo.push(People({favoriteNumber:y, name: nam}));
->>>>>>> 25d0b28e4d6591a858d8079534d2fd1b05fa2697
        peo.push(People(y,nam));
     }
 }
+
 
 
 
