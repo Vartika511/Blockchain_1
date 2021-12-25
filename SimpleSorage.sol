@@ -27,7 +27,7 @@ contract SimpleStorage {
     } */
     
     function addPerson(string memory nam, uint y) public{
-       // peo.push(People({favoriteNumber:y, name: nam}));
+       peo.push(People({favoriteNumber:y, name: nam}));
        peo.push(People(y,nam));
     }
 }
