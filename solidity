@@ -34,3 +34,29 @@
        or contracts deriving from it), without using this. #This is the default visibility level for state variables.
     - private
        Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
++There are 3 types of Modifiers
+    - pure
+      Disallows modification or access of state.
+      which do maths.
+      they just view and makes no changes in contract.
+    - view
+      Disallows modification of state.
+      they read something
+      By default public variables are view modifiers.
+      they just view and makes no changes in contract.
+    - payable
+      Allows them to receive Ether together with a call.
+      they make changes in contract.
++Arrays - A way of storing a list of an object or type.
+   -Dynamic Array --> An array that can change size.
+   -Fixed Array --> An array that can not change size.
++Data can be stored in two ways
+   Memory:
+         Data will only be stored during the execution of the function.
+         (delete it after execution)
+   Storage:
+         They will persist even after the function executes.
+         (keep it forever)
+   (String is an object so we need to decide were to store it.)      
++Mappings: 
+          A dictionary like data structure, with 1 value per key. 
